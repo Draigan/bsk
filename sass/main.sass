@@ -3,18 +3,22 @@
 
 // Include any default variable overrides here (though functions won't be available)
 @import "../node_modules/bootstrap/scss/bootstrap"
+@import "testiominal"
 
 // Then add additional custom code here
 $purple: #652D90
-
+$yellow: #FFC001
 .my-purple
   background-color: $purple
 
-.my-yellow
+.my-yellow-bg
   background-color: #FFC001 !important
 
+.my-yellow-color
+  color: $yellow !important
+
 .dark-purple
-  background-color: #1e013b !important
+  color: #1e013b !important
 
 .yellow-glow
 
@@ -22,8 +26,8 @@ $purple: #652D90
   background-color: #1f1f1f !important
 
 body 
-  margin-top: 0 !important
-  padding: 0 !important
+  // margin-top: 0 !important
+  // padding: 0 !important
 
 #logo 
   width: 100%
@@ -31,8 +35,24 @@ body
 section
   margin-bottom: $spacer 
 
+nav
+  ul
+    li
+      a:hover
+        color: $purple !important
+        transition-duration: .3s !important
+
+
+.footer--nav
+  li
+    a 
+      color: white !important
+    a:hover
+      color: $purple !important
+      transition-duration: .3s !important
 .tom-brandon-image
   width: 100%
+
 
 .iframe-container
   position: relative
@@ -52,19 +72,125 @@ section
 .carousel-item
   height: 480px
 
+.carousel-item.-small
+  height: 380px
+
+.testimonials-headline
+  height: 380px
+
+
 .carousel-image
   height: 100%
   object-fit: cover
   filter: brightness(0.9)
 
-.kings-of-gold
-  background-image: url("/images/moneyandgold.jpg")
-  background-size: cover
-  height: 480px
+
+.kings-of-gold 
+  position: relative
   width: 100%
-  background-repeat: no-repeat
-  img
-    width: 30%
-    margin: auto
+
+.kings-of-gold::before 
+  content: ""
+  position: absolute
+  top: 0 
+  left: 0
+  width: 100%
+  height: 100%
+  background-image: url("images/moneyandgold.jpg")
+  background-size: cover
+  filter: brightness(54%)
+
+.kings-of-gold-inside 
+  /* This will make it stack on top of the ::before */
+  position: relative
+
+.testimonial
+  position: relative
+
+.testimonial::before 
+  content: ""
+  position: absolute
+  top: 0 
+  left: 0
+  width: 100%
+  height: 100%
+  background-image: url("images/moneyandgold.jpg")
+  background-size: cover
+  filter: brightness(54%)
+
+.testimonial
+  /* This will make it stack on top of the ::before */
+  position: relative
+
+.testinomials-section
+  height: 100px
 
 
+.checkmark
+  width: 3rem
+  margin: auto
+  margin-bottom: $spacer
+
+.star
+  width: 1.5rem
+  // display: inline-block
+
+.map--buttons
+  max-width: 20rem
+  display: flex
+  flex-wrap: wrap
+  
+.gta-image
+  max-width: 566px
+  max-height: 320px
+  
+.gta-carousel
+  max-width: 566px
+  max-height: 320px
+
+ 
+footer
+  background-color: black
+  // border-bottom: 10px solid $purple
+
+.footer--phone-bg
+  position: relative
+  background-image: url("images/phone.jpg")
+  height: 480px
+  background-size: cover !important
+  background-repeat: no-repeat !important
+  background-position: 50% 50%
+
+.footer--phone-bubble
+  border-radius: 50%
+  margin-left: 10%
+  width: 20rem
+  background: rgba(101, 45, 144, 0.6)
+  height: 20rem
+
+.footer--logo
+  width: 166px
+  height: 128px
+.footer-propper
+  text-align: center
+
+.dropdown-menu li 
+  position: relative
+
+.dropdown-menu .dropdown-submenu 
+  display: none
+  position: absolute
+  left: 100%
+  top: -7px
+
+.dropdown-menu .dropdown-submenu-left 
+  right: 100%
+  left: auto
+
+.dropdown-menu > li:hover > .dropdown-submenu 
+  display: block
+
+@media only screen and (max-width: 450px)
+  
+  .footer--phone-bubble
+    margin-left: 1%
