@@ -10789,8 +10789,12 @@ textarea.form-control-lg {
   background-color: #1f1f1f !important;
 }
 
+.text-dark {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 #logo {
-  width: 500px;
+  width: 100%;
 }
 
 section {
@@ -10976,9 +10980,6 @@ footer {
 @media only screen and (max-width: 450px) {
   .footer--phone-bubble {
     margin-left: 1%;
-  }
-  #logo {
-    width: 300px;
   }
 }
 
