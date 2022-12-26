@@ -10790,7 +10790,7 @@ textarea.form-control-lg {
 }
 
 #logo {
-  width: 100%;
+  width: 500px;
 }
 
 section {
@@ -10913,13 +10913,15 @@ nav ul li a:hover {
 }
 
 .gta-image {
-  max-width: 566px;
-  max-height: 320px;
+  aspect-ratio: 16/9;
+  width: 100%;
+  align-items: center;
 }
 
 .gta-carousel {
-  max-width: 566px;
-  max-height: 320px;
+  aspect-ratio: 16/9;
+  width: 100%;
+  display: flex;
 }
 
 footer {
@@ -10945,7 +10947,6 @@ footer {
 
 .footer--logo {
   width: 166px;
-  height: 128px;
 }
 
 .footer-propper {
@@ -10975,6 +10976,9 @@ footer {
 @media only screen and (max-width: 450px) {
   .footer--phone-bubble {
     margin-left: 1%;
+  }
+  #logo {
+    width: 300px;
   }
 }
 

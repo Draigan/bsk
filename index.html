@@ -19,7 +19,7 @@
       <img src="images/logo.jpg" id="logo" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
-      aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+      aria-controls="navmenu " aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navmenu">
@@ -28,7 +28,7 @@
         <li class="nav-item ">
           <a href="#learn" class="nav-link text-dark">Home</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" } <li class="nav-item">
           <a href="#learn" class="nav-link text-dark">We Buy</a>
         </li>
         <li class="nav-item">
@@ -43,14 +43,14 @@
         <li class="nav-item">
           <a href="#instructors" class="nav-link text-dark">Contact</a>
         </li>
-        <li class="nav-item dropdown p-2">
+        <li class="nav-item dropdown  p-2">
           <a class="dropdown-toggle text-dark" id="my-submenu" href="#" role="button" data-bs-toggle="dropdown"
             aria-expanded="false">
             Social Media
           </a>
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="my-submenu">
             <li>
-              <a class="dropdown-item fw-bold text-dark" href="#">
+              <a class="dropdown-item dropup  fw-bold text-dark" href="#">
                 <img src="images/facebook.svg" alt="...">
                 Facebook &raquo;
               </a>
@@ -204,7 +204,7 @@
     <section>
       <div class="container-fluid">
         <div class="row px-3 ">
-          <div class="col-lg mt-5 d-flex justify-content-center align-items-center">
+          <div class="col-lg text-center d-flex justify-content-center align-items-center">
             <div>
               <h2 class="text-dark d-flex justify-content-center align-items-center">
                 Great Deals.
@@ -257,7 +257,10 @@
           <div class="col-lg bg-dark d-flex justify-content-center align-items-center">
             <div>
               <h1 class="text-light px-5">
-                #1 Buy & Sell In The GTA
+                <span class="my-yellow-color">Buy and Sell Kings</span>
+              </h1>
+              <h1 class="text-light px-5">
+                <span class="my-yellow-color">#1</span> Buy & Sell In The GTA
               </h1>
               <p class="text-light">
               <ul class="text-light">
@@ -289,29 +292,29 @@
               </p>
             </div>
           </div>
-          <div class="col-lg d-flex justify-content-end bg-dark">
+          <div class="col-lg d-flex justify-content-center align-items-center bg-dark">
             <div id="gtaCarousel" class="carousel slide gta-carousel" data-bs-ride="carousel">
               <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="1500">
-                  <img src="images/slider1.jpg" class="d-block w-100 carousel-image gta-image" alt="...">
+                <div class="carousel-item active" data-bs-interval="1300">
+                  <img src="images/slider1.jpg" class="d-block w-100 gta-image" alt="...">
                 </div>
-                <div class="carousel-item" data-bs-interval="1500">
-                  <img src="images/slider2.jpg" class="d-block w-100 carousel-image gta-image" alt="...">
+                <div class="carousel-item" data-bs-interval="2300">
+                  <img src="images/slider2.jpg" class="d-block w-100 gta-image" alt="...">
                 </div>
-                <div class="carousel-item" data-bs-interval="1500">
-                  <img src="images/slider3.jpg" class="d-block w-100 carousel-image gta-image" alt="...">
+                <div class="carousel-item" data-bs-interval="2300">
+                  <img src="images/slider3.jpg" class="d-block w-100 gta-image" alt="...">
                 </div>
-                <div class="carousel-item" data-bs-interval="1500">
-                  <img src="images/slider4.jpg" class="d-block w-100 carousel-image gta-image" alt="...">
+                <div class="carousel-item" data-bs-interval="2300">
+                  <img src="images/slider4.jpg" class="d-block w-100 gta-image" alt="...">
                 </div>
-                <div class="carousel-item" data-bs-interval="1500">
-                  <img src="images/slider5.jpg" class="d-block w-100 carousel-image gta-image" alt="...">
+                <div class="carousel-item" data-bs-interval="2300">
+                  <img src="images/slider5.jpg" class="d-block w-100 gta-image" alt="...">
                 </div>
-                <div class="carousel-item" data-bs-interval="1500">
-                  <img src="images/slider6.jpg" class="d-block w-100 carousel-image gta-image" alt="...">
+                <div class="carousel-item" data-bs-interval="2300">
+                  <img src="images/slider6.jpg" class="d-block w-100 gta-image" alt="...">
                 </div>
-                <div class="carousel-item" data-bs-interval="1500">
-                  <img src="images/slider7.jpg" class="d-block w-100 carousel-image gta-image" alt="...">
+                <div class="carousel-item" data-bs-interval="2300">
+                  <img src="images/slider7.jpg" class="d-block w-100 gta-image" alt="...">
                 </div>
               </div>
             </div>
@@ -485,7 +488,7 @@
 
     <div class="container-fluid">
       <section class="map">
-        <div class="map--buttons mx-auto">
+        <div class="map--buttons pb-1 mx-auto">
           <button class="map-button " data-toronto-button>
             Toronto
           </button>
@@ -520,6 +523,9 @@
 
   </main>
 
+
+  <!-- Footer -->
+
   <footer>
     <div class="container-fluid">
       <div class="row footer--phone-bg">
@@ -538,9 +544,13 @@
         </div>
       </div>
     </div>
+
+
     <!-- Footer Proper -->
+
+
     <div class="container">
-      <div class="row">
+      <div class="row mt-3">
 
         <a class="col-xl-2 d-flex justify-content-center" href="/">
           <img src="images/king.png" class="footer--logo" alt="">
@@ -566,22 +576,7 @@
     </div>
 
 
-    <!-- <div class="container-xxl"> -->
-    <!--   <div class="d-flex flex-wrap justify-content-between align-items-center py-3 "> -->
-    <!--     <p class="col-md-4 mb-0  fw-light"></p> -->
-
-
-    <!-- <ul class="nav footer--nav col-md-4 justify-content-end"> -->
-    <!--   <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li> -->
-    <!--   <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">We Buy</a></li> -->
-    <!--   <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">We Sell</a></li> -->
-    <!--   <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Consignment</a></li> -->
-    <!--   <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact</a></li> -->
-    <!--   <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Social Media</a></li> -->
-    <!-- </ul> -->
     <p class="col-xl-4 mb-0 mx-auto text-center fw-light"> &copy; 2022 Buy & Sell Kings | Website Created By Draigan</p>
-    <!--   </div> -->
-    <!-- </div> -->
   </footer>
 </body>
 
