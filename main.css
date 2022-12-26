@@ -10769,6 +10769,29 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.my-submenu {
+  position: relative;
+}
+.my-submenu a:hover {
+  color: #6f42c1 !important;
+}
+.my-submenu li {
+  list-style: none;
+}
+
+.my-submenu--dropdown {
+  position: absolute;
+  left: -35px;
+  width: 9rem;
+  z-index: 999;
+  padding-left: 0;
+  margin-right: 50px;
+}
+
+.my-submenu--icon {
+  display: inline;
+}
+
 .my-purple {
   background-color: #652D90;
 }
@@ -10787,10 +10810,6 @@ textarea.form-control-lg {
 
 .bg-dark {
   background-color: #1f1f1f !important;
-}
-
-.text-dark {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 #logo {

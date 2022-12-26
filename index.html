@@ -44,39 +44,36 @@
         <li class="nav-item">
           <a href="#instructors" class="nav-link text-dark">Contact</a>
         </li>
-        <li class="nav-item dropdown  p-2">
-          <a class="dropdown-toggle text-dark" id="my-submenu" href="#" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            Social Media
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="my-submenu">
-            <li>
-              <a class="dropdown-item dropup  fw-bold text-dark" href="#">
-                <img src="images/facebook.svg" alt="...">
-                Facebook &raquo;
-              </a>
-              <ul class="dropdown-menu dropdown-submenu dropdown-submenu-left">
-                <li>
-                  <a class="dropdown-item" href="#">Toronto</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Scarborugh</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Ajax</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Oshawa</a>
-                </li>
-            </li>
-          </ul>
-        <li><a class="dropdown-item text-dark fw-bold" href="#">
-            <img src="images/youtube.svg" alt="...">
-            Youtube
-          </a></li>
+        <li class="nav-item">
+          <a href="#instructors" data-submenu-link class="nav-link text-dark">Social Media</a>
+          <div class="my-submenu">
+            <ul data-dropdown class="my-submenu--dropdown p-3 rounded shadow-lg bg-light">
+              <li> <img class="my-submenu--icon" src="images/facebook.svg" alt="">
+                <span class="fw-bold class=" my-submenu--icon""> Facebook</span>
+              </li>
+              <li>
+                <a class="dropdown-item px-3" href="#">Toronto</a>
+              </li>
+              <li>
+                <a class="dropdown-item px-3" href="#">Scarborugh</a>
+              </li>
+              <li>
+                <a class="dropdown-item px-3" href="#">Ajax</a>
+              </li>
+              <li>
+                <a class="dropdown-item px-3" href="#">Oshawa</a>
+              </li>
+              <li> <img class="my-submenu--icon" src="images/youtube.svg" alt="">
+                <span class="fw-bold class=" my-submenu--icon""> Youtube</span>
+              </li>
+              <li>
+                <a class="dropdown-item px-3" href="#">All Locations</a>
+              </li>
+        </li>
       </ul>
-      </li>
-      </ul>
+    </div>
+    </li>
+    </ul>
     </div>
     <!-- </div> -->
   </nav>
